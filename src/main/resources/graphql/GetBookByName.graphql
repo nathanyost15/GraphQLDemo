@@ -1,0 +1,6 @@
+query GetBookByName($name: String!) {
+    books(name: $name) {
+        name
+        isbn
+    }
+}
