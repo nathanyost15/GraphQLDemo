@@ -33,7 +33,7 @@ public class Author {
 
         if(this.books == null) {
             this.books = new ArrayList<>();
-            this.books.add(book);
         }
+        this.books.add(book);
     }
 }

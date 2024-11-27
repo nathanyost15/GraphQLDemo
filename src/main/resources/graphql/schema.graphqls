@@ -1,6 +1,6 @@
 type Query {
     books(name: String!): Book
-    authors: [Author]
+    authors(name: String!): Author
 }
 
 type Book {
