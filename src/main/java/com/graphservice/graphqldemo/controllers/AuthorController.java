@@ -1,4 +1,4 @@
-package com.graphservice.graphqldemo;
+package com.graphservice.graphqldemo.controllers;
 
 import com.graphservice.graphqldemo.models.Author;
 import com.graphservice.graphqldemo.models.Book;
