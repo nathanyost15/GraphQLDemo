@@ -1,8 +1,14 @@
 type Query {
     books: [Book]
+    authors: [Author]
 }
 
 type Book {
     name: String!
     isbn: String
+}
+
+type Author {
+    name: String!
+    books: [Book]
 }

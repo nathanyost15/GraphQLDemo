@@ -13,15 +13,8 @@ public class BookController {
     @QueryMapping
     public Iterable<Book> books() {
         List<Book> books = new ArrayList<>();
-        books.add(new Book("Emperors New Groove"));
-        books.add(new Book("Narnia"));
-        addIsbns(books);
+        books.add(new Book("Emperors New Groove", UUID.randomUUID().toString()));
+        books.add(new Book("Narnia", UUID.randomUUID().toString()));
         return books;
-    }
-
-    private void addIsbns(List<Book> books) {
-        for (Book book : books) {
-            book.setIsbn(UUID.randomUUID().toString());
-        }
     }
 }
